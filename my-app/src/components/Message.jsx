@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Message({ text }) {
+export default function Message({ messageList }) {
     return (
         <div className="message">
-            {text}
+            {messageList.map(el => <div>{el.text}</div>)}
         </div>
     )
 }
